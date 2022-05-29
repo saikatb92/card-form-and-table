@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="index.css"/>
+    <title>Document</title>
+</head>
+<body id="body">
+<div class="part1-section">
+    <div>
+        <strong>Part 1 - Card Component</strong>
+    </div>
+    <br />
+    <div class="card-container">
+        <div class="card-image">
+        </div>
+        <div class="card-info">
+         <div class="card-heading">Beach Day</div>
+         <div class="card-non-heading padding-bottom-20"><strong>RUFUS THE DOG</strong></div>
+         <div class="card-non-heading padding-bottom-14"><label>Modified 02/28/2019 by bfrost</label></div>
+        </div>
+    </div>    
+</div>
+<div class="part2-section">
+    <div>
+        <strong>Part 2 - Form Element</strong>
+    </div>
+    <div>
+       <div class="form-layout">
+           <div class="form-element">
+            <label>Name</label>
+            <input type="text" placeholder="Enter Name"/>
+           </div>
+           <div class="form-element">
+            <label>Email</label>
+            <input type="text" placeholder="Enter Email" />
+           </div>
+           <div class="form-element">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter Phone Number" />
+           </div>
+           <div class="form-element">
+            <label>Password</label>
+            <input type="password" placeholder="Enter Password" />
+           </div>
+           <div class="form-element">
+            <label>Confirm Password</label>
+            <input type="text" placeholder="Confirm Password" />
+           </div>
+        <div class="form-element">
+            <button class="form-button">SAVE</button>
+        </div>
+       </div> 
+    </div>   
+</div>
+    <div class="part3-section">
+        <div>
+            <strong>Part 3 - Table Functions</strong>
+        </div>
+        <div>
+            <table id="table-component">
+                <thead>
+                    <tr>
+                        <th class="sort-by" onclick="sortByName()">
+                            <span id="name" class="sort-by">Product Name</span>
+                        </th>
+                        <th class="sort-by" onclick="sortByPrice()">
+                            <span id="price" class="sort-by">Price</span>
+                        </th>
+                        <th class="sort-by" onclick="sortByCategory()">
+                            <span id="category" class="sort-by">Category</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
